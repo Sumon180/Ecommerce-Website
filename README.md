@@ -1,7 +1,7 @@
 # Ecommerce-Website
 React.js, Tailwind CSS, 
 ## Available Scripts
-### `Redux, React, TailwindCss, With Srever`  
+### `Redux, React, TailwindCss`  
 In the project directory, you can run:
 
 ### `npm install`
