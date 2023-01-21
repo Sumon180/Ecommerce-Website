@@ -13,7 +13,7 @@ Instal All dependencies in this project
 ### Link
 
 Reactjs: https://reactjs.org/docs/create-a-new-react-app.html  
-TailwindCSS: https://tailwindcss.com/  
+TailwindCSS: https://tailwindcss.com/docs/guides/vite  
 Redux Toolkit: https://redux-toolkit.js.org/tutorials/quick-start  
 Hero Icon: https://heroicons.com/  
 ReactRouter: https://reactrouter.com/  
