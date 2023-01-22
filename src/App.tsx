@@ -1,5 +1,13 @@
 import React from "react";
-import { Hero, Sales, FlexContent, Stories, Footer } from "./components";
+import {
+  Hero,
+  Sales,
+  FlexContent,
+  Stories,
+  Footer,
+  Navbar,
+  Cart,
+} from "./components";
 
 import {
   heroapi,
@@ -16,6 +24,8 @@ type Props = {};
 const App = (props: Props) => {
   return (
     <>
+      <Navbar />
+      <Cart />
       <main className="flex flex-col gap-16 relative">
         <Hero heroapi={heroapi} />
         <Sales endpoint={popularsales} ifExists />
