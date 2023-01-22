@@ -17,7 +17,8 @@ TailwindCSS: https://tailwindcss.com/docs/guides/vite
 Redux Toolkit: https://redux-toolkit.js.org/tutorials/quick-start  
 Hero Icon: https://heroicons.com/  
 ReactRouter: https://reactrouter.com/  
-Splide: https://splidejs.com/integration/react-splide/
+Splide: https://splidejs.com/integration/react-splide/  
+Lodash: https://lodash.com/
 
 
 ### Video Tutorial
