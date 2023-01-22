@@ -18,7 +18,8 @@ Redux Toolkit: https://redux-toolkit.js.org/tutorials/quick-start
 Hero Icon: https://heroicons.com/  
 ReactRouter: https://reactrouter.com/  
 Splide: https://splidejs.com/integration/react-splide/  
-Lodash: https://lodash.com/
+Lodash: https://lodash.com/  
+React hot toast: https://react-hot-toast.com/
 
 
 ### Video Tutorial
