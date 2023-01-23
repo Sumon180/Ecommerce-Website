@@ -1,5 +1,5 @@
 # Ecommerce-Website
-React.js, Tailwind CSS, 
+React.js, Redux toolki, Tailwind CSS, 
 ### Importent Topic
 Local Storage
 ## Available Scripts
