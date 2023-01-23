@@ -1,6 +1,6 @@
 # Ecommerce-Website
 React.js, Redux toolkit, Tailwind CSS, 
-### Importent Topic `Local Storage`, `Deploy`
+### Important Topic: `Local Storage`, `Deploy in Vercel`
 
 ## Available Scripts
 ### `Redux, React, TailwindCss`  
