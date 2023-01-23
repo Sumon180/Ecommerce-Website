@@ -2,7 +2,7 @@
 React.js, Redux toolkit, Tailwind CSS, 
 ### Important Topic: `Local Storage`, `Deploy in Vercel`
 
-## Available Scripts
+### Available Scripts
 ### `Redux, React, TailwindCss`  
 In the project directory, you can run:
 
