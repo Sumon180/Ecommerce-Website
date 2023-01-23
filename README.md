@@ -1,7 +1,7 @@
 # Ecommerce-Website
 React.js, Redux toolkit, Tailwind CSS, 
-### Importent Topic
-Local Storage
+### Importent Topic `Local Storage` `Deploy`
+
 ## Available Scripts
 ### `Redux, React, TailwindCss`  
 In the project directory, you can run:
@@ -21,7 +21,8 @@ Hero Icon: https://heroicons.com/
 ReactRouter: https://reactrouter.com/  
 Splide: https://splidejs.com/integration/react-splide/  
 Lodash: https://lodash.com/  
-React hot toast: https://react-hot-toast.com/
+React hot toast: https://react-hot-toast.com/  
+Deploy Link: https://ecommerce-website-eosin.vercel.app/
 
 
 ### Video Tutorial
