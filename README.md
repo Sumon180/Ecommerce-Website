@@ -1,6 +1,6 @@
 # Ecommerce-Website
 React.js, Redux toolkit, Tailwind CSS, 
-### Importent Topic `Local Storage` `Deploy`
+### Importent Topic `Local Storage`, `Deploy`
 
 ## Available Scripts
 ### `Redux, React, TailwindCss`  
