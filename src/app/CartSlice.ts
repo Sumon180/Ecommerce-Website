@@ -6,6 +6,8 @@ import { toast } from "react-hot-toast";
 interface CounterState {
   cartState: any;
   cartItems: any;
+  cartTotalAmount: any;
+  cartTotalQantity: number;
 }
 
 const initialState: CounterState = {
@@ -13,6 +15,8 @@ const initialState: CounterState = {
   cartItems: localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart") ?? "")
     : [], // Let suppose Database
+  cartTotalAmount: 0,
+  cartTotalQantity: 0,
 };
 
 export const cartSlice = createSlice({
@@ -83,6 +87,25 @@ export const cartSlice = createSlice({
       toast.success(`Cart Cleared`);
       localStorage.setItem("cart", JSON.stringify(state.cartItems));
     },
+    setGetTotals: (state, action: PayloadAction<any>) => {
+      let { totalAmount, totalQTY } = state.cartItems.reduce(
+        (cartTotal: any, cartItem: any) => {
+          const { price, cartQuantity } = cartItem;
+          const totalPrice = price * cartQuantity;
+
+          cartTotal.totalAmount += totalPrice;
+          cartTotal.totalQTY += cartQuantity;
+
+          return cartTotal;
+        },
+        {
+          totalAmount: 0,
+          totalQTY: 0,
+        }
+      );
+      state.cartTotalAmount = totalAmount;
+      state.cartTotalQantity = totalQTY;
+    },
   },
 });
 
@@ -94,8 +117,13 @@ export const {
   setIncreaseItemQTY,
   setDecreaseItemQTY,
   setClearCartItems,
+  setGetTotals,
 } = cartSlice.actions;
 export const selectCartState = (state: RootState) => state.cart.cartState;
 export const selectCartItems = (state: RootState) => state.cart.cartItems;
+
+export const selectTotalAmount = (state: RootState) =>
+  state.cart.cartTotalAmount;
+export const selectTotalQTY = (state: RootState) => state.cart.cartTotalQantity;
 
 export default cartSlice.reducer;

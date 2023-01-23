@@ -5,14 +5,15 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
-import { useDispatch } from "react-redux/es/exports";
-import { setOpenCart } from "../app/CartSlice";
+import { useDispatch, useSelector } from "react-redux/es/exports";
+import { selectTotalQTY, setOpenCart } from "../app/CartSlice";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
   const [navState, setNavState] = useState<any | null>(false);
   const dispatch = useDispatch();
+  const totalQTY = useSelector(selectTotalQTY);
 
   const onCartToggle = () => {
     dispatch(
@@ -51,7 +52,7 @@ const Navbar = (props: Props) => {
             <img
               src={logo}
               alt="logo/img"
-              className={`w-16 h-auto ${navState && "filter brightness-0"}`}
+              className={`w-20 h-auto ${navState && "filter brightness-0"}`}
             />
           </div>
           <ul className="flex items-center justify-center gap-2">
@@ -87,7 +88,7 @@ const Navbar = (props: Props) => {
                       : "bg-slate-100 text-slate-900 shadow-slate-100"
                   }`}
                 >
-                  0
+                  {totalQTY}
                 </div>
               </button>
             </li>
