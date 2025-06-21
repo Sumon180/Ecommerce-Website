@@ -36,8 +36,7 @@ const Footer = ({ footerAPI }: Props) => {
         <div className="mt-5 text-center">
           <p className="text-sm md:text-center">
             Copyright<sup className="text-base font-bold">&copy;</sup> All
-            Reserved Rights{" "}
-            <span className="font-semibold">JSSTACK DEVELOPERS {year}</span>
+            Reserved Rights <span className="font-semibold">{year}</span>
           </p>
         </div>
       </div>
