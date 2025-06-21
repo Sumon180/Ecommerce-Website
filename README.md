@@ -24,10 +24,6 @@ Splide: https://splidejs.com/integration/react-splide/
 Lodash: https://lodash.com/  
 React hot toast: https://react-hot-toast.com/  
 Deploy Link: https://ecommerce-website-eosin.vercel.app/
-
-
-### Video Tutorial
-
-You can see my youtube video for this project in [here](https://www.youtube.com/watch?v=QnykUEqAVoc&t=2770s)  
+ 
 ### Tailwindcss setup with vite
 [Here](https://tailwindcss.com/docs/guides/vite)
